@@ -7,12 +7,12 @@ public class Calculator {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		int firstNumber;
-		int secondNumber;
-		int sum;
-		int difference;
-		int product;
-		int quotient;
+		float firstNumber;
+		float secondNumber;
+		float sum;
+		float difference;
+		float product;
+		float quotient;
 		String operationLetter;
 
 			
@@ -32,11 +32,11 @@ public class Calculator {
 					System.out.println("You have chosen: Addition");
 					System.out.println("Please enter two whole numbers for addition.");
 					
-					firstNumber = scanner.nextInt();
-					secondNumber = scanner.nextInt();
+					firstNumber = scanner.nextFloat();
+					secondNumber = scanner.nextFloat();
 					sum = firstNumber + secondNumber;
 					
-					System.out.println(String.format("%d + %d = %d", firstNumber, secondNumber, sum));
+					System.out.println(String.format("%f + %f = %f", firstNumber, secondNumber, sum));
 					
 					break;
 	
@@ -47,21 +47,21 @@ public class Calculator {
 							+ "Note that the first number will be the minuend and the second will thus be "
 							+ "the subtrahend.");
 					
-					firstNumber = scanner.nextInt();
-					secondNumber = scanner.nextInt();
+					firstNumber = scanner.nextFloat();
+					secondNumber = scanner.nextFloat();
 					difference = firstNumber - secondNumber;
 					
-					System.out.println(String.format("%d - %d = %d", firstNumber, secondNumber, difference));
+					System.out.println(String.format("%f - %f = %f", firstNumber, secondNumber, difference));
 					break;
 					
 				case "M":
 					
 					System.out.println("You have chosen: Multiplication");
 					System.out.println("Please enter two whole numbers for multiplication.\n");
-					firstNumber = scanner.nextInt();
-					secondNumber = scanner.nextInt();
+					firstNumber = scanner.nextFloat();
+					secondNumber = scanner.nextFloat();
 					product = firstNumber * secondNumber;
-					System.out.println(String.format("%d * %d = %d", firstNumber, secondNumber, product));
+					System.out.println(String.format("%f * %f = %f", firstNumber, secondNumber, product));
 					break;
 					
 				case "D":
@@ -69,12 +69,11 @@ public class Calculator {
 					System.out.println("You have chosen: Division");
 					System.out.println("Please enter two whole numbers for division.\n"
 							+ "Note that the first number will be the dividend and the second"
-							+ "number will be the divisor.\n"
-							+ "Also, all quotients will be rounded to be integers.");
-					firstNumber = scanner.nextInt();
-					secondNumber = scanner.nextInt();
+							+ "number will be the divisor.\n");
+					firstNumber = scanner.nextFloat();
+					secondNumber = scanner.nextFloat();
 					quotient = firstNumber / secondNumber;
-					System.out.println(String.format("%d / %d = %d", firstNumber, secondNumber, quotient));
+					System.out.println(String.format("%f / %f = %f", firstNumber, secondNumber, quotient));
 					break;
 				
 				default: 
