@@ -72,6 +72,10 @@ public class Calculator {
 							+ "number will be the divisor.\n");
 					firstNumber = scanner.nextFloat();
 					secondNumber = scanner.nextFloat();
+					if (secondNumber == 0) {
+						System.out.println("Error: Divide by Zero");
+						System.exit(0);
+					}
 					quotient = firstNumber / secondNumber;
 					System.out.println(String.format("%f / %f = %f", firstNumber, secondNumber, quotient));
 					break;
