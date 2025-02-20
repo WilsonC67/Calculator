@@ -92,6 +92,10 @@ public class Calculator {
 				
 		scanner.close();
 		
+		
+		// git checkout -b [name of branch]
+		// ^ this is to create a new branch
+		// git checkout [master] or git checkout[branch-name] changes your location to branch or master
 		// old version:
 		
 		/*
